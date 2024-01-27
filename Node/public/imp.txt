@@ -1,0 +1,3 @@
+const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks();
+                const landmarks = detections[0].landmarks._positions;
+                console.log(landmarks); // This array contains the 68 facial landmark points
